@@ -1,6 +1,0 @@
-framework module DynamicDataSource {
-  umbrella header "DynamicDataSource-umbrella.h"
-
-  export *
-  module * { export * }
-}

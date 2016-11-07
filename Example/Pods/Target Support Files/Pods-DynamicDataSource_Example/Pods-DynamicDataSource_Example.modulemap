@@ -1,6 +1,0 @@
-framework module Pods_DynamicDataSource_Example {
-  umbrella header "Pods-DynamicDataSource_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

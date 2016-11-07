@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'DynamicDataSource_Example' do
-  pod 'DynamicDataSource', :path => '../'
+target 'ReactiveDataSource_Example' do
+  pod 'ReactiveDataSource', :path => '../'
 
-  target 'DynamicDataSource_Tests' do
+  target 'ReactiveDataSource_Tests' do
     inherit! :search_paths
 
     

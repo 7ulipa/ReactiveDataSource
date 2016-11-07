@@ -1,0 +1,6 @@
+framework module ReactiveDataSource {
+  umbrella header "ReactiveDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}
