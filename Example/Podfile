@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DynamicDataSource_Example' do
+  pod 'DynamicDataSource', :path => '../'
+
+  target 'DynamicDataSource_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - DynamicDataSource (0.1.0)
+
+DEPENDENCIES:
+  - DynamicDataSource (from `../`)
+
+EXTERNAL SOURCES:
+  DynamicDataSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DynamicDataSource: 57b50efbaf44dd9448ca0b617f257dfc7912271c
+
+PODFILE CHECKSUM: 96f8527b89b11c2d6288d379230420aa0f453626
+
+COCOAPODS: 1.1.1
