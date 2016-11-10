@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'ReactiveDataSource_Example' do
   pod 'ReactiveDataSource', :path => '../'
-
-  target 'ReactiveDataSource_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
