@@ -12,9 +12,9 @@ public class Section {
     
     public private(set) var items: [Item] = []
     
-    var _item: [Item] = []
+    var _items: [Item] = []
     
-    weak var dataSource: ReactiveDataSource.ChangeMaker?
+    weak var maker: ReactiveDataSource.ChangeMaker?
     
     public init(_ items: [Item]) {
         self.items = items
@@ -24,7 +24,7 @@ public class Section {
     }
     
     public func remove() {
-        dataSource?.remove(self)
+        maker?.remove(self)
     }
     
     public func append(_ item: Item) {
@@ -34,20 +34,34 @@ public class Section {
     public func insert(_ item: Item, at index: Int) {
         item.section = self
         items.insert(item, at: index)
-        dataSource?.changes.append(.add(.item(item)))
+        maker?.changes.append(.add(.item(item)))
     }
     
     public func remove(_ item: Item) {
         if let index = items.index(of: item) {
-            dataSource?.changes.append(.remove(.item(item)))
+            maker?.changes.append(.remove(.item(item)))
             items.remove(at: index)
         }
     }
     
     public func remove(at index: Int) {
         let item = items[index]
-        dataSource?.changes.append(.remove(.item(item)))
+        maker?.changes.append(.remove(.item(item)))
         items.remove(at: index)
+    }
+    
+    public var sectionForRemove: Int? {
+        get {
+            return maker?._sections.index(of: self)
+        }
+    }
+    
+    public var sectionForAdd: Int? {
+        return maker?.sections.index(of: self)
+    }
+    
+    func commit() {    
+        _items = items
     }
 }
 

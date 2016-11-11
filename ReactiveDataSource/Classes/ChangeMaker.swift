@@ -14,15 +14,15 @@ extension ReactiveDataSource {
         
         public var sections: [Section]
         
-        private var _sections: [Section]
+        var _sections: [Section]
     
-        var changes: [Change] = []
+        var changes: [Change<DataValue<Section, Item>>] = []
         
         init(_ sections: [Section]) {
             self.sections = sections
             _sections = sections
             sections.forEach { (section) in
-                section.dataSource = self
+                section.maker = self
             }
         }
         
@@ -44,9 +44,70 @@ extension ReactiveDataSource {
         }
         
         public func insert(_ section: Section, at index: Int) {
-            section.dataSource = self
+            section.maker = self
             sections.insert(section, at: index)
             changes.append(.add(.section(section)))
+        }
+        
+        func commit() {
+            sections = _sections
+            sections.forEach { (section) in
+                section.commit()
+            }
+        }
+        
+        public func caculateChanges() -> [Change<DataValue<Int, IndexPath>>] {
+            return changes.flatMap ({ (change) -> [Change<DataValue<Int, IndexPath>>] in
+                switch change {
+                case .add(let add):
+                    switch add {
+                    case .item(let item):
+                        if let indexPath = item.indexPathForAdd {
+                            return [Change.add(DataValue.item(indexPath))]
+                        } else {
+                            return []
+                        }
+                    case .section(let section):
+                        if let section = section.sectionForAdd {
+                            return [Change.add(DataValue.section(section))]
+                        } else {
+                            return []
+                        }
+                    }
+                    
+                case .remove(let remove):
+                    switch remove {
+                    case .section(let section):
+                        if let section = section.sectionForRemove {
+                            return [Change.remove(DataValue.section(section))]
+                        } else {
+                            return []
+                        }
+                    case .item(let item):
+                        if let indexPath = item.indexPathForRemove {
+                            return [Change.remove(DataValue.item(indexPath))]
+                        } else {
+                            return []
+                        }
+                    }
+                    
+                case .reload(let reload):
+                    switch reload {
+                    case.item(let item):
+                        if let indexPath = item.indexPathForAdd {
+                            return [Change.reload(DataValue.item(indexPath))]
+                        } else {
+                            return []
+                        }
+                    case .section(let section):
+                        if let section = section.sectionForAdd {
+                            return [Change.reload(DataValue.section(section))]
+                        } else {
+                            return []
+                        }
+                    }
+                }
+            })
         }
     }
 }

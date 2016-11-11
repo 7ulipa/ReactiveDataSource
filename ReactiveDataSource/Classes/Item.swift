@@ -14,6 +14,40 @@ public class Item {
     public func remove() {
         section?.remove(self)
     }
+    
+    public var indexPathForRemove: IndexPath? {
+        get {
+            if let section = section?.sectionForRemove {
+                if let itemIndex = itemForRemove {
+                    return IndexPath(item: itemIndex, section: section)
+                }
+            }
+            return nil
+        }
+    }
+    
+    public var indexPathForAdd: IndexPath? {
+        get {
+            if let section = section?.sectionForAdd {
+                if let itemIndex = itemForAdd {
+                    return IndexPath(item: itemIndex, section: section)
+                }
+            }
+            return nil
+        }
+    }
+    
+    public var itemForAdd: Int? {
+        get {
+            return section?.items.index(of: self)
+        }
+    }
+    
+    public var itemForRemove: Int? {
+        get {
+            return section?._items.index(of: self)
+        }
+    }
 }
 
 
