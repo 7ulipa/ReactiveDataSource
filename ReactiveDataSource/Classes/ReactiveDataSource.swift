@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ReactiveDataSource {
+public class ReactiveDataSource: NSObject {
     
     weak var delegate: ReactiveDataSourceDelegate?
     
@@ -16,6 +16,7 @@ public class ReactiveDataSource {
     
     init(_ sections: [Section] = []) {
         self.sections = sections
+        super.init()
     }
     
     public private(set) var sections: [Section]

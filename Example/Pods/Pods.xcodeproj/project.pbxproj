@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FBE6B2B9040DC038C98AD8C531EDC79 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32590E033320514FD355945324F89CFC /* Change.swift */; };
+		14FBECF4692A5B90D286EA3CCFF36AB7 /* ReactiveDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */; };
 		1D453954B399000F0D1FB7435DAC7CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		21D32F9EFF4638F349322D1F8ABF7A0F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6B85B40B9F6F65A9FFBBBFD925C4 /* Section.swift */; };
+		29564B71C00EB7795B972E89700C4138 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32067600568E92F99A91FE9F1209FEC5 /* Section.swift */; };
 		31B113E4F8EA5620D854E703DD8EF7DF /* Pods-ReactiveDataSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E107928D90A07B2B428762C5E5C0AC68 /* Pods-ReactiveDataSource_Example-dummy.m */; };
-		5BF236550205925AD9DE0FC111EE8A5C /* ReactiveDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */; };
-		667D2ACF232DE1F3209ABED005D35FE2 /* ReactiveDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71688B6A030FFE5AFB9A03B9DE090E8F /* ReactiveDataSource.swift */; };
+		419A8F8B735D5FB2A10A18F7771193FF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA441874F6B0BBA2DDB6C0145E6A731 /* Item.swift */; };
+		653B07FC9ADC55CB407A89F05514D8B1 /* CollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E8276A0FF2BFB156D7CFE37401B4E9 /* CollectionViewSection.swift */; };
 		687B81CE1C9C09C8DB533A32BC08352C /* ReactiveDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF32DD72FDB378E51A74F40114C29B7 /* ReactiveDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FCEFE0B234D82DFF48B14C58C3A9B27 /* ChangeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA165F41443F6F93E9D20A780846926 /* ChangeMaker.swift */; };
+		953A8FB8BC1CC78B41CD46FEF711E8CE /* ReactiveCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0639B3282E16FE7F9501A1518085519A /* ReactiveCollectionViewDataSource.swift */; };
+		998B03D3FBB93F95AF0C122FDA617CEA /* ReactiveDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C98F057D62A3A0D5E57532ED8ACF27 /* ReactiveDataSource.swift */; };
+		9F486EFC234CE2D957BE9CCADFFEFCD5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4462AC60435011E52FB33F0A8B0B4B53 /* CollectionViewCell.swift */; };
 		B3E5F90A1B08240AB77D8A73983F4799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		C624FD465F1823CE13FE624CF3BB7A12 /* Pods-ReactiveDataSource_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B852BF776CB4A6A6C1375265BDBFDE3C /* Pods-ReactiveDataSource_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4A74286A571B147D357F4B4ADA8C8E9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC857B439A60C6757626609AAE2B405 /* Item.swift */; };
+		C8ED43BC0AAFFDAB9898EBD955E9263F /* ChangeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C889D5995C5FE7EA4708261A646610 /* ChangeMaker.swift */; };
+		E5B921A09ABA3910E81400E4DF1DB150 /* CollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47F9129A81CBBC8055B91E76C76D582 /* CollectionViewItem.swift */; };
+		E9FA45B0EFA2EFF6080EF7E5C21571B4 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE1F22082C39DECF2FA7ED728200B2C /* Change.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,27 +35,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0639B3282E16FE7F9501A1518085519A /* ReactiveCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveDataSource-dummy.m"; sourceTree = "<group>"; };
+		2DA441874F6B0BBA2DDB6C0145E6A731 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		2E0D8BC4A4EC308AA6A926E6A453B1A3 /* ReactiveDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveDataSource-prefix.pch"; sourceTree = "<group>"; };
-		32590E033320514FD355945324F89CFC /* Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
+		32067600568E92F99A91FE9F1209FEC5 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		4462AC60435011E52FB33F0A8B0B4B53 /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		620FE91CC28236D2440CC002246512B5 /* ReactiveDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveDataSource.framework; path = ReactiveDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64C889D5995C5FE7EA4708261A646610 /* ChangeMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChangeMaker.swift; sourceTree = "<group>"; };
 		70C3741571F07BFA061DBB315C97B68A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71688B6A030FFE5AFB9A03B9DE090E8F /* ReactiveDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveDataSource.swift; sourceTree = "<group>"; };
 		71FCFED66353263225A62C240266BBA3 /* Pods-ReactiveDataSource_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactiveDataSource_Example-frameworks.sh"; sourceTree = "<group>"; };
+		77C98F057D62A3A0D5E57532ED8ACF27 /* ReactiveDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveDataSource.swift; sourceTree = "<group>"; };
+		7FE1F22082C39DECF2FA7ED728200B2C /* Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		8DF32DD72FDB378E51A74F40114C29B7 /* ReactiveDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveDataSource-umbrella.h"; sourceTree = "<group>"; };
 		8F2C018ED083F6EF30888F740F6D7976 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90E8276A0FF2BFB156D7CFE37401B4E9 /* CollectionViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewSection.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A5F431ED408E5FEC6D3D298AFF10F40 /* Pods-ReactiveDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactiveDataSource_Example.modulemap"; sourceTree = "<group>"; };
-		9DC857B439A60C6757626609AAE2B405 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A63B3B8A5FCA3AF001984F960AEAE9CF /* Pods-ReactiveDataSource_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactiveDataSource_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A8C3383C0C0186BF37CD349BC9DB8EDC /* Pods-ReactiveDataSource_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactiveDataSource_Example-resources.sh"; sourceTree = "<group>"; };
-		B7FB6B85B40B9F6F65A9FFBBBFD925C4 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		B852BF776CB4A6A6C1375265BDBFDE3C /* Pods-ReactiveDataSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactiveDataSource_Example-umbrella.h"; sourceTree = "<group>"; };
 		C5EDD65F4428CA289F226AE2ED113676 /* Pods-ReactiveDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactiveDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C985515DE8D0676F8F29F1888173433F /* ReactiveDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveDataSource.modulemap; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D47F9129A81CBBC8055B91E76C76D582 /* CollectionViewItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewItem.swift; sourceTree = "<group>"; };
 		D877D7CFFF33D64B0C119B19E47652CF /* Pods_ReactiveDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactiveDataSource_Example.framework; path = "Pods-ReactiveDataSource_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA165F41443F6F93E9D20A780846926 /* ChangeMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChangeMaker.swift; sourceTree = "<group>"; };
 		DD23F2AC9E9A73DC2D4AFAC6173DABB8 /* Pods-ReactiveDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactiveDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E107928D90A07B2B428762C5E5C0AC68 /* Pods-ReactiveDataSource_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactiveDataSource_Example-dummy.m"; sourceTree = "<group>"; };
 		E3ADD93E973678DA289031CAEFBDCA29 /* Pods-ReactiveDataSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactiveDataSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -122,7 +130,7 @@
 		7F40A6B37A3B1BD6F8A6322DFAC3BA76 /* ReactiveDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				E44938B9A869CA81D4336EF5C7CAB1D7 /* ReactiveDataSource */,
+				B364D024D6627BC96CC313DA69A18E75 /* ReactiveDataSource */,
 				458B3923DFBA3506C7D924A07A4D6FCE /* Support Files */,
 			);
 			name = ReactiveDataSource;
@@ -136,6 +144,32 @@
 				620FE91CC28236D2440CC002246512B5 /* ReactiveDataSource.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9A1FCC8C815EEE9DEA90B9F76DBD02A1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7FE1F22082C39DECF2FA7ED728200B2C /* Change.swift */,
+				64C889D5995C5FE7EA4708261A646610 /* ChangeMaker.swift */,
+				4462AC60435011E52FB33F0A8B0B4B53 /* CollectionViewCell.swift */,
+				D47F9129A81CBBC8055B91E76C76D582 /* CollectionViewItem.swift */,
+				90E8276A0FF2BFB156D7CFE37401B4E9 /* CollectionViewSection.swift */,
+				2DA441874F6B0BBA2DDB6C0145E6A731 /* Item.swift */,
+				0639B3282E16FE7F9501A1518085519A /* ReactiveCollectionViewDataSource.swift */,
+				77C98F057D62A3A0D5E57532ED8ACF27 /* ReactiveDataSource.swift */,
+				32067600568E92F99A91FE9F1209FEC5 /* Section.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B364D024D6627BC96CC313DA69A18E75 /* ReactiveDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9A1FCC8C815EEE9DEA90B9F76DBD02A1 /* Classes */,
+			);
+			name = ReactiveDataSource;
+			path = ReactiveDataSource;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -162,28 +196,6 @@
 			);
 			name = "Pods-ReactiveDataSource_Example";
 			path = "Target Support Files/Pods-ReactiveDataSource_Example";
-			sourceTree = "<group>";
-		};
-		D10095E7F7CF2AED8B961DDD6B6D286F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				32590E033320514FD355945324F89CFC /* Change.swift */,
-				DBA165F41443F6F93E9D20A780846926 /* ChangeMaker.swift */,
-				9DC857B439A60C6757626609AAE2B405 /* Item.swift */,
-				71688B6A030FFE5AFB9A03B9DE090E8F /* ReactiveDataSource.swift */,
-				B7FB6B85B40B9F6F65A9FFBBBFD925C4 /* Section.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E44938B9A869CA81D4336EF5C7CAB1D7 /* ReactiveDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				D10095E7F7CF2AED8B961DDD6B6D286F /* Classes */,
-			);
-			name = ReactiveDataSource;
-			path = ReactiveDataSource;
 			sourceTree = "<group>";
 		};
 		FE6D921EA7513F56FE28A612CF428B96 /* Development Pods */ = {
@@ -220,7 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 028B66137639E96C2365721E1D23C1E0 /* Build configuration list for PBXNativeTarget "ReactiveDataSource" */;
 			buildPhases = (
-				22B91A02D35775379A90B69788893E64 /* Sources */,
+				AB4387A8F786C95F2EBE7517D4AD72C8 /* Sources */,
 				8267F4BDA80D3207D02A870AC5239878 /* Frameworks */,
 				AB9591745A2C7E3E135CA50512B6C912 /* Headers */,
 			);
@@ -279,24 +291,28 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22B91A02D35775379A90B69788893E64 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0FBE6B2B9040DC038C98AD8C531EDC79 /* Change.swift in Sources */,
-				9FCEFE0B234D82DFF48B14C58C3A9B27 /* ChangeMaker.swift in Sources */,
-				F4A74286A571B147D357F4B4ADA8C8E9 /* Item.swift in Sources */,
-				5BF236550205925AD9DE0FC111EE8A5C /* ReactiveDataSource-dummy.m in Sources */,
-				667D2ACF232DE1F3209ABED005D35FE2 /* ReactiveDataSource.swift in Sources */,
-				21D32F9EFF4638F349322D1F8ABF7A0F /* Section.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A97B64BEEF78115ABC32E8DB94A6FC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				31B113E4F8EA5620D854E703DD8EF7DF /* Pods-ReactiveDataSource_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB4387A8F786C95F2EBE7517D4AD72C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9FA45B0EFA2EFF6080EF7E5C21571B4 /* Change.swift in Sources */,
+				C8ED43BC0AAFFDAB9898EBD955E9263F /* ChangeMaker.swift in Sources */,
+				9F486EFC234CE2D957BE9CCADFFEFCD5 /* CollectionViewCell.swift in Sources */,
+				E5B921A09ABA3910E81400E4DF1DB150 /* CollectionViewItem.swift in Sources */,
+				653B07FC9ADC55CB407A89F05514D8B1 /* CollectionViewSection.swift in Sources */,
+				419A8F8B735D5FB2A10A18F7771193FF /* Item.swift in Sources */,
+				953A8FB8BC1CC78B41CD46FEF711E8CE /* ReactiveCollectionViewDataSource.swift in Sources */,
+				14FBECF4692A5B90D286EA3CCFF36AB7 /* ReactiveDataSource-dummy.m in Sources */,
+				998B03D3FBB93F95AF0C122FDA617CEA /* ReactiveDataSource.swift in Sources */,
+				29564B71C00EB7795B972E89700C4138 /* Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
