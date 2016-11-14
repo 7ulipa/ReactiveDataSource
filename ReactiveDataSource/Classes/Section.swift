@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Section {
+open class Section {
     
     public private(set) var items: [Item] = []
     
@@ -16,7 +16,7 @@ public class Section {
     
     weak var maker: ReactiveDataSource.ChangeMaker?
     
-    public init(_ items: [Item]) {
+    public init(_ items: [Item] = []) {
         self.items = items
         items.forEach { (item) in
             item.section = self

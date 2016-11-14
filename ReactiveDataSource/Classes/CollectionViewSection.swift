@@ -8,6 +8,6 @@
 
 import Foundation
 
-public class CollectionViewSection: Section {
+open class CollectionViewSection: Section {
     
 }

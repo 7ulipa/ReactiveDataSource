@@ -50,7 +50,7 @@ extension ReactiveDataSource {
         }
         
         func commit() {
-            sections = _sections
+            _sections = sections
             sections.forEach { (section) in
                 section.commit()
             }

@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class CollectionViewCellEntity: Item {
-    public func cellClass() -> CollectionViewCell.Type {
+open class CollectionViewCellEntity: Item {
+    open func cellClass() -> CollectionViewCell.Type {
         return CollectionViewCell.self
     }
 }

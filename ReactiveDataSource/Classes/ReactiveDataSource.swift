@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class ReactiveDataSource: NSObject {
+open class ReactiveDataSource: NSObject {
     
-    weak var delegate: ReactiveDataSourceDelegate?
+    public weak var delegate: ReactiveDataSourceDelegate?
     
     private let queue: OperationQueue = ReactiveDataSource.createQueue()
     
-    init(_ sections: [Section] = []) {
+    public init(_ sections: [Section] = []) {
         self.sections = sections
         super.init()
     }
@@ -39,7 +39,9 @@ public class ReactiveDataSource: NSObject {
                 sem.signal()
             }
             
-            self.delegate?.perform(operation)
+            DispatchQueue.main.async {
+                self.delegate?.perform(operation)
+            }
             
             sem.wait()
         }

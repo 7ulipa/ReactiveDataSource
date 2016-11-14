@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
+open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
     public typealias Entity = CollectionViewCellEntity
-    public func render(with entity: CollectionViewCellEntity) {
+    open func render(with entity: CollectionViewCellEntity) {
         //for override
     }
 }

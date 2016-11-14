@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ReactiveCollectionViewDataSource: ReactiveDataSource, UICollectionViewDataSource {
+open class ReactiveCollectionViewDataSource: ReactiveDataSource, UICollectionViewDataSource {
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return sections.count
     }
@@ -18,6 +18,13 @@ public class ReactiveCollectionViewDataSource: ReactiveDataSource, UICollectionV
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let entity = sections[indexPath.section].items[indexPath.item] as? CollectionViewCellEntity {
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: entity.cellClass().reuseIdentifier(), for: indexPath) as? CollectionViewCell {
+                cell.render(with: entity)
+                return cell
+            }
+        }
+        
         return UICollectionViewCell()
     }
 }

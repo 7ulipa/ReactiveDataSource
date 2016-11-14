@@ -8,11 +8,15 @@
 
 import Foundation
 
-public class Item {
+open class Item {
     weak var section: Section?
     
     public func remove() {
         section?.remove(self)
+    }
+    
+    public init() {
+        
     }
     
     public var indexPathForRemove: IndexPath? {
