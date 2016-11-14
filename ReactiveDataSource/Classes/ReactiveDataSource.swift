@@ -26,7 +26,7 @@ public class ReactiveDataSource: NSObject {
             let maker = ChangeMaker(self.sections)
             changes(maker)
             let changes = maker.caculateChanges()
-            let operation = ChangeOperation()
+            let operation = ChangeOperation(changes)
             
             let sem = DispatchSemaphore(value: 0)
             

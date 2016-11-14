@@ -21,6 +21,12 @@ public enum Change<T> {
 
 public class ChangeOperation {
     
+    public init(_ changes: [Change<DataValue<Int, IndexPath>>] = []) {
+        self.changes = changes
+    }
+    
+    public let changes: [Change<DataValue<Int, IndexPath>>]
+    
     var _complete: (() -> Void)?
     var _commit: (() -> Void)?
     

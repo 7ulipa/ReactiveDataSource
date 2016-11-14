@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class CollectionViewItem: Item {
+public class CollectionViewCellEntity: Item {
     public func cellClass() -> CollectionViewCell.Type {
         return CollectionViewCell.self
     }
