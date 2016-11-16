@@ -9,8 +9,9 @@
 import Foundation
 
 public protocol Reusable {
+    associatedtype reuseContainerType
     static func reuseIdentifier() -> String
-    static func register(for collectionView: UICollectionView)
+    static func register(for container: reuseContainerType)
 }
 
 public extension Reusable {

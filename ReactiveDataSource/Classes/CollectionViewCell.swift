@@ -9,14 +9,14 @@
 import Foundation
 
 open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
+    public typealias reuseContainerType = UICollectionView
+    
     public typealias Entity = CollectionViewCellEntity
     open func render(with entity: CollectionViewCellEntity) {
         //for override
     }
-}
-
-public extension Reusable where Self: UICollectionViewCell {
-    static func register(for collectionView: UICollectionView) {
-        collectionView.register(self, forCellWithReuseIdentifier: reuseIdentifier())
+    
+    public static func register(for container: UICollectionView) {
+        container.register(self, forCellWithReuseIdentifier: reuseIdentifier())
     }
 }

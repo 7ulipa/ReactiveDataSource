@@ -8,23 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1D453954B399000F0D1FB7435DAC7CBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2CD015088E31CE731D6A1EA9D85DC7CA /* ReactiveCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34651B3A8DD6D9186726672F610CA70F /* ReactiveCollectionViewDataSource.swift */; };
+		1F6353EA027A2017370523CA0A5E154E /* ReactiveDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CBDA21A6677E4775649A01ED0A606F /* ReactiveDataSource.swift */; };
 		31B113E4F8EA5620D854E703DD8EF7DF /* Pods-ReactiveDataSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E107928D90A07B2B428762C5E5C0AC68 /* Pods-ReactiveDataSource_Example-dummy.m */; };
-		419A4BFE0CC69DFFD43C6A8660D3DFE6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90D535D3AC4E5E7F9E51B031D9F925 /* CollectionViewCell.swift */; };
-		598FC56D5457A5992BEF91E441DBD617 /* CollectionViewCellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47293B4ABDCE0DB6EF7A80C04C0EDF8 /* CollectionViewCellEntity.swift */; };
-		5D2D1EF26F87E5D0D5EFECD016276B56 /* ChangeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E1479BA4C2C1F58ED83D790B6111DD /* ChangeMaker.swift */; };
+		3CADCFF449ABC6704AF24E924A970CE1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A63748FB954A92A3214933753F113E /* Section.swift */; };
+		3F17F858900BD834BE4817125568D95C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32176D7A85B9936EA7E21AEFBE024FD /* CollectionViewCell.swift */; };
+		4947D1569096628D5CAAAAEEC6D599AE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314B71211702335450DAA4E8C825F6D8 /* Item.swift */; };
 		687B81CE1C9C09C8DB533A32BC08352C /* ReactiveDataSource-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF32DD72FDB378E51A74F40114C29B7 /* ReactiveDataSource-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		808276B264BDC825868CE4EE8E549133 /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B255F92C40E05431F5022DC67ECE8E /* Renderable.swift */; };
-		87351E101034E09979CCE0AD0F63BCDD /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF8D72E5EA55F59FD787E6EFCDF516 /* Reusable.swift */; };
-		97708C469105D1941688C91E5443D2BF /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5033663F5EFFACB1C23EB4F52FD442 /* Section.swift */; };
-		A918CB3155C267CECB53F843766981FC /* ReactiveDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */; };
+		6C5DBA2CCFA48381EA17380B1420EF39 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167F7DA231A783959606D220CD2062B8 /* Reusable.swift */; };
+		70DC8DFB1B9B538166708EA11C42136F /* CollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2668AB38868A5555C4E4ACF6C209B /* CollectionViewSection.swift */; };
+		727F7EB161206B63C075029ECE87E274 /* CollectionViewCellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEE91F324312ADB5B9EBC480D2D5D90 /* CollectionViewCellEntity.swift */; };
+		730EF0F269C830CB350B4BA26AB1DE33 /* ReactiveTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F366B270C4D0C6008F5D7AE267ECD8 /* ReactiveTableViewDataSource.swift */; };
+		898AEFA9899833FA6DAAE0E4DC1BE914 /* ReactiveDataSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */; };
+		A6C6A07E88263DF86CBFAC399D44FCD0 /* ChangeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0A90F284CF959C387E4AA81E903B6 /* ChangeMaker.swift */; };
 		B3E5F90A1B08240AB77D8A73983F4799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B90270BC6C130F08CF4E745455C05ACD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74070D4A601349E762CFC61F5D96C6 /* TableViewCell.swift */; };
+		BC15F7567885EA48BA9DB515571A4355 /* ReactiveCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC8629FAE6D23C173AFAEE91AFDE05 /* ReactiveCollectionViewDataSource.swift */; };
 		C624FD465F1823CE13FE624CF3BB7A12 /* Pods-ReactiveDataSource_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B852BF776CB4A6A6C1375265BDBFDE3C /* Pods-ReactiveDataSource_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C99356638F3E84D554290D5001853C4E /* CollectionView+PerformUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD139F2BA754E3E403F7653A6B477D8 /* CollectionView+PerformUpdate.swift */; };
-		CC818A2D8C0AF4E7DCD4F9577A472B3E /* CollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E51F3E9AA0D952DF687D2A888FAC45E /* CollectionViewSection.swift */; };
-		D3B8059FDB29BBF297ABBAC8A1B8C396 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEC8F9A619DA45D0D752F723BC78F5F /* Item.swift */; };
-		D78C22D8A9F36D3A338B31A6B6EE284C /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD544A8C5A6E01258D7026A06DAE3ADE /* Change.swift */; };
-		F773D9776A9320741D831B2330CF8F4C /* ReactiveDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A9A735C175D1EE96B1FB61A1AE27CD /* ReactiveDataSource.swift */; };
+		D279AA7876A933204DCFD3589EAC494C /* CollectionView+PerformUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7944851BBD74A1B505BDDFCF95C680 /* CollectionView+PerformUpdate.swift */; };
+		E9B79C0BE31C716AE4F2E5F19148F396 /* TableViewCellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9D4EC26AA89529880499DD4A25D9C /* TableViewCellEntity.swift */; };
+		F368DB8408F0B6F509DAABDD4E0AAA2E /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB540B435BBA89BF40C4E517D673A66 /* Change.swift */; };
+		F93F4E5DE83E16D0773B4DA08D2EA53B /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3ACF50791FDD7D19C407106D9E14AA /* Renderable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,38 +41,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		167F7DA231A783959606D220CD2062B8 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		1B72319CDE800D6E943C02E9EEEC0218 /* ReactiveDataSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReactiveDataSource-dummy.m"; sourceTree = "<group>"; };
+		27C9D4EC26AA89529880499DD4A25D9C /* TableViewCellEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewCellEntity.swift; sourceTree = "<group>"; };
+		28F366B270C4D0C6008F5D7AE267ECD8 /* ReactiveTableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveTableViewDataSource.swift; sourceTree = "<group>"; };
+		2CA0A90F284CF959C387E4AA81E903B6 /* ChangeMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChangeMaker.swift; sourceTree = "<group>"; };
 		2E0D8BC4A4EC308AA6A926E6A453B1A3 /* ReactiveDataSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveDataSource-prefix.pch"; sourceTree = "<group>"; };
-		34651B3A8DD6D9186726672F610CA70F /* ReactiveCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		5F5033663F5EFFACB1C23EB4F52FD442 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		314B71211702335450DAA4E8C825F6D8 /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		620FE91CC28236D2440CC002246512B5 /* ReactiveDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReactiveDataSource.framework; path = ReactiveDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB540B435BBA89BF40C4E517D673A66 /* Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		70C3741571F07BFA061DBB315C97B68A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71FCFED66353263225A62C240266BBA3 /* Pods-ReactiveDataSource_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactiveDataSource_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7E51F3E9AA0D952DF687D2A888FAC45E /* CollectionViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewSection.swift; sourceTree = "<group>"; };
+		8D7944851BBD74A1B505BDDFCF95C680 /* CollectionView+PerformUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CollectionView+PerformUpdate.swift"; sourceTree = "<group>"; };
+		8DEE91F324312ADB5B9EBC480D2D5D90 /* CollectionViewCellEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewCellEntity.swift; sourceTree = "<group>"; };
 		8DF32DD72FDB378E51A74F40114C29B7 /* ReactiveDataSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveDataSource-umbrella.h"; sourceTree = "<group>"; };
 		8F2C018ED083F6EF30888F740F6D7976 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F90D535D3AC4E5E7F9E51B031D9F925 /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A5F431ED408E5FEC6D3D298AFF10F40 /* Pods-ReactiveDataSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactiveDataSource_Example.modulemap"; sourceTree = "<group>"; };
-		9DEC8F9A619DA45D0D752F723BC78F5F /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A63B3B8A5FCA3AF001984F960AEAE9CF /* Pods-ReactiveDataSource_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactiveDataSource_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8A9A735C175D1EE96B1FB61A1AE27CD /* ReactiveDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveDataSource.swift; sourceTree = "<group>"; };
 		A8C3383C0C0186BF37CD349BC9DB8EDC /* Pods-ReactiveDataSource_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactiveDataSource_Example-resources.sh"; sourceTree = "<group>"; };
-		B2B255F92C40E05431F5022DC67ECE8E /* Renderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		AC3ACF50791FDD7D19C407106D9E14AA /* Renderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
+		AEE2668AB38868A5555C4E4ACF6C209B /* CollectionViewSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewSection.swift; sourceTree = "<group>"; };
 		B852BF776CB4A6A6C1375265BDBFDE3C /* Pods-ReactiveDataSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactiveDataSource_Example-umbrella.h"; sourceTree = "<group>"; };
+		B8A63748FB954A92A3214933753F113E /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		C5EDD65F4428CA289F226AE2ED113676 /* Pods-ReactiveDataSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactiveDataSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C985515DE8D0676F8F29F1888173433F /* ReactiveDataSource.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ReactiveDataSource.modulemap; sourceTree = "<group>"; };
+		CB74070D4A601349E762CFC61F5D96C6 /* TableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CBD139F2BA754E3E403F7653A6B477D8 /* CollectionView+PerformUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CollectionView+PerformUpdate.swift"; sourceTree = "<group>"; };
-		CD544A8C5A6E01258D7026A06DAE3ADE /* Change.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
+		D3CBDA21A6677E4775649A01ED0A606F /* ReactiveDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveDataSource.swift; sourceTree = "<group>"; };
 		D877D7CFFF33D64B0C119B19E47652CF /* Pods_ReactiveDataSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactiveDataSource_Example.framework; path = "Pods-ReactiveDataSource_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD23F2AC9E9A73DC2D4AFAC6173DABB8 /* Pods-ReactiveDataSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactiveDataSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DDAC8629FAE6D23C173AFAEE91AFDE05 /* ReactiveCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactiveCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		E107928D90A07B2B428762C5E5C0AC68 /* Pods-ReactiveDataSource_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactiveDataSource_Example-dummy.m"; sourceTree = "<group>"; };
+		E32176D7A85B9936EA7E21AEFBE024FD /* CollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		E3ADD93E973678DA289031CAEFBDCA29 /* Pods-ReactiveDataSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactiveDataSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		E6E1479BA4C2C1F58ED83D790B6111DD /* ChangeMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ChangeMaker.swift; sourceTree = "<group>"; };
-		E7BF8D72E5EA55F59FD787E6EFCDF516 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F2694837346BB0E3322629E633135C2B /* ReactiveDataSource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReactiveDataSource.xcconfig; sourceTree = "<group>"; };
-		F47293B4ABDCE0DB6EF7A80C04C0EDF8 /* CollectionViewCellEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CollectionViewCellEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,21 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17C5CEC2CF1EDC7E43712F74E194F3B9 /* Classes */ = {
+		0A00A980BD16D1C28300338746F10960 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CD544A8C5A6E01258D7026A06DAE3ADE /* Change.swift */,
-				E6E1479BA4C2C1F58ED83D790B6111DD /* ChangeMaker.swift */,
-				CBD139F2BA754E3E403F7653A6B477D8 /* CollectionView+PerformUpdate.swift */,
-				8F90D535D3AC4E5E7F9E51B031D9F925 /* CollectionViewCell.swift */,
-				F47293B4ABDCE0DB6EF7A80C04C0EDF8 /* CollectionViewCellEntity.swift */,
-				7E51F3E9AA0D952DF687D2A888FAC45E /* CollectionViewSection.swift */,
-				9DEC8F9A619DA45D0D752F723BC78F5F /* Item.swift */,
-				34651B3A8DD6D9186726672F610CA70F /* ReactiveCollectionViewDataSource.swift */,
-				A8A9A735C175D1EE96B1FB61A1AE27CD /* ReactiveDataSource.swift */,
-				B2B255F92C40E05431F5022DC67ECE8E /* Renderable.swift */,
-				E7BF8D72E5EA55F59FD787E6EFCDF516 /* Reusable.swift */,
-				5F5033663F5EFFACB1C23EB4F52FD442 /* Section.swift */,
+				6EB540B435BBA89BF40C4E517D673A66 /* Change.swift */,
+				2CA0A90F284CF959C387E4AA81E903B6 /* ChangeMaker.swift */,
+				8D7944851BBD74A1B505BDDFCF95C680 /* CollectionView+PerformUpdate.swift */,
+				E32176D7A85B9936EA7E21AEFBE024FD /* CollectionViewCell.swift */,
+				8DEE91F324312ADB5B9EBC480D2D5D90 /* CollectionViewCellEntity.swift */,
+				AEE2668AB38868A5555C4E4ACF6C209B /* CollectionViewSection.swift */,
+				314B71211702335450DAA4E8C825F6D8 /* Item.swift */,
+				DDAC8629FAE6D23C173AFAEE91AFDE05 /* ReactiveCollectionViewDataSource.swift */,
+				D3CBDA21A6677E4775649A01ED0A606F /* ReactiveDataSource.swift */,
+				28F366B270C4D0C6008F5D7AE267ECD8 /* ReactiveTableViewDataSource.swift */,
+				AC3ACF50791FDD7D19C407106D9E14AA /* Renderable.swift */,
+				167F7DA231A783959606D220CD2062B8 /* Reusable.swift */,
+				B8A63748FB954A92A3214933753F113E /* Section.swift */,
+				CB74070D4A601349E762CFC61F5D96C6 /* TableViewCell.swift */,
+				27C9D4EC26AA89529880499DD4A25D9C /* TableViewCellEntity.swift */,
 			);
 			name = Classes;
 			path = Classes;
@@ -156,7 +165,7 @@
 		7F40A6B37A3B1BD6F8A6322DFAC3BA76 /* ReactiveDataSource */ = {
 			isa = PBXGroup;
 			children = (
-				AC1C66840D0203AE9FB71811AB3686A8 /* ReactiveDataSource */,
+				EECF912F747CCB4A5E8B50834CEF9022 /* ReactiveDataSource */,
 				458B3923DFBA3506C7D924A07A4D6FCE /* Support Files */,
 			);
 			name = ReactiveDataSource;
@@ -170,15 +179,6 @@
 				620FE91CC28236D2440CC002246512B5 /* ReactiveDataSource.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AC1C66840D0203AE9FB71811AB3686A8 /* ReactiveDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				17C5CEC2CF1EDC7E43712F74E194F3B9 /* Classes */,
-			);
-			name = ReactiveDataSource;
-			path = ReactiveDataSource;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -205,6 +205,15 @@
 			);
 			name = "Pods-ReactiveDataSource_Example";
 			path = "Target Support Files/Pods-ReactiveDataSource_Example";
+			sourceTree = "<group>";
+		};
+		EECF912F747CCB4A5E8B50834CEF9022 /* ReactiveDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0A00A980BD16D1C28300338746F10960 /* Classes */,
+			);
+			name = ReactiveDataSource;
+			path = ReactiveDataSource;
 			sourceTree = "<group>";
 		};
 		FE6D921EA7513F56FE28A612CF428B96 /* Development Pods */ = {
@@ -241,7 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 028B66137639E96C2365721E1D23C1E0 /* Build configuration list for PBXNativeTarget "ReactiveDataSource" */;
 			buildPhases = (
-				D952CC898D33C36D4C6C75FCEA17AB75 /* Sources */,
+				12D025C8EFA583C5FEC808F2C01C1217 /* Sources */,
 				8267F4BDA80D3207D02A870AC5239878 /* Frameworks */,
 				AB9591745A2C7E3E135CA50512B6C912 /* Headers */,
 			);
@@ -300,31 +309,34 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12D025C8EFA583C5FEC808F2C01C1217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F368DB8408F0B6F509DAABDD4E0AAA2E /* Change.swift in Sources */,
+				A6C6A07E88263DF86CBFAC399D44FCD0 /* ChangeMaker.swift in Sources */,
+				D279AA7876A933204DCFD3589EAC494C /* CollectionView+PerformUpdate.swift in Sources */,
+				3F17F858900BD834BE4817125568D95C /* CollectionViewCell.swift in Sources */,
+				727F7EB161206B63C075029ECE87E274 /* CollectionViewCellEntity.swift in Sources */,
+				70DC8DFB1B9B538166708EA11C42136F /* CollectionViewSection.swift in Sources */,
+				4947D1569096628D5CAAAAEEC6D599AE /* Item.swift in Sources */,
+				BC15F7567885EA48BA9DB515571A4355 /* ReactiveCollectionViewDataSource.swift in Sources */,
+				898AEFA9899833FA6DAAE0E4DC1BE914 /* ReactiveDataSource-dummy.m in Sources */,
+				1F6353EA027A2017370523CA0A5E154E /* ReactiveDataSource.swift in Sources */,
+				730EF0F269C830CB350B4BA26AB1DE33 /* ReactiveTableViewDataSource.swift in Sources */,
+				F93F4E5DE83E16D0773B4DA08D2EA53B /* Renderable.swift in Sources */,
+				6C5DBA2CCFA48381EA17380B1420EF39 /* Reusable.swift in Sources */,
+				3CADCFF449ABC6704AF24E924A970CE1 /* Section.swift in Sources */,
+				B90270BC6C130F08CF4E745455C05ACD /* TableViewCell.swift in Sources */,
+				E9B79C0BE31C716AE4F2E5F19148F396 /* TableViewCellEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A97B64BEEF78115ABC32E8DB94A6FC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				31B113E4F8EA5620D854E703DD8EF7DF /* Pods-ReactiveDataSource_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D952CC898D33C36D4C6C75FCEA17AB75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D78C22D8A9F36D3A338B31A6B6EE284C /* Change.swift in Sources */,
-				5D2D1EF26F87E5D0D5EFECD016276B56 /* ChangeMaker.swift in Sources */,
-				C99356638F3E84D554290D5001853C4E /* CollectionView+PerformUpdate.swift in Sources */,
-				419A4BFE0CC69DFFD43C6A8660D3DFE6 /* CollectionViewCell.swift in Sources */,
-				598FC56D5457A5992BEF91E441DBD617 /* CollectionViewCellEntity.swift in Sources */,
-				CC818A2D8C0AF4E7DCD4F9577A472B3E /* CollectionViewSection.swift in Sources */,
-				D3B8059FDB29BBF297ABBAC8A1B8C396 /* Item.swift in Sources */,
-				2CD015088E31CE731D6A1EA9D85DC7CA /* ReactiveCollectionViewDataSource.swift in Sources */,
-				A918CB3155C267CECB53F843766981FC /* ReactiveDataSource-dummy.m in Sources */,
-				F773D9776A9320741D831B2330CF8F4C /* ReactiveDataSource.swift in Sources */,
-				808276B264BDC825868CE4EE8E549133 /* Renderable.swift in Sources */,
-				87351E101034E09979CCE0AD0F63BCDD /* Reusable.swift in Sources */,
-				97708C469105D1941688C91E5443D2BF /* Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
