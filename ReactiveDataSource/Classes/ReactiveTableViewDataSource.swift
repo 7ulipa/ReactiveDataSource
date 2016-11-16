@@ -14,7 +14,7 @@ open class ReactiveTableViewDataSource: ReactiveDataSource, UITableViewDataSourc
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sections[section].items.count
+        return sections[section]._items.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
