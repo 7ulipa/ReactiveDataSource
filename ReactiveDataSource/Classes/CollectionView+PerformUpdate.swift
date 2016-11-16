@@ -10,7 +10,7 @@ import UIKit
 
 extension UICollectionView: ReactiveDataSourceDelegate {
     public func perform(_ operation: ChangeOperation) {
-        self.performBatchUpdates({ 
+        performBatchUpdates({ 
             operation.commit()
             operation.changes.forEach({ (change) in
                 switch change {
