@@ -18,7 +18,7 @@ open class ReactiveCollectionViewDataSource: ReactiveDataSource, UICollectionVie
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let entity = sections[indexPath.section].items[indexPath.item] as? CollectionViewCellEntity {
+        if let entity = sections[indexPath.section]._items[indexPath.item] as? CollectionViewCellEntity {
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: entity.cellClass().reuseIdentifier(), for: indexPath) as? CollectionViewCell {
                 cell.render(with: entity)
                 return cell
