@@ -9,9 +9,9 @@
 import Foundation
 
 public protocol Reusable {
-    associatedtype reuseContainerType
+    associatedtype Container
     static func reuseIdentifier() -> String
-    static func register(for container: reuseContainerType)
+    static func register(for container: Container)
 }
 
 public extension Reusable {

@@ -10,5 +10,8 @@ import Foundation
 
 public protocol Renderable {
     associatedtype Entity
+    associatedtype Dimension
+    associatedtype Container
     func render(with entity: Entity)
+    func preferredDimension(for entity: Entity, in container: Container) -> Dimension
 }
