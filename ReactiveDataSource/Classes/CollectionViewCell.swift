@@ -21,7 +21,7 @@ open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
         container.register(self, forCellWithReuseIdentifier: reuseIdentifier())
     }
     
-    public func preferredDimension(for entity: CollectionViewCellEntity, in container: UICollectionView) -> CGSize {
+    static public func preferredDimension(for entity: CollectionViewCellEntity, in container: UICollectionView) -> CGSize {
         return CGSize.zero
     }
 }

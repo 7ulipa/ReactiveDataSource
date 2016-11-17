@@ -22,7 +22,7 @@ open class TableViewCell: UITableViewCell, Renderable, Reusable {
         container.register(self, forCellReuseIdentifier: reuseIdentifier())
     }
     
-    public func preferredDimension(for entity: TableViewCellEntity, in container: UITableView) -> CGFloat {
+    static public func preferredDimension(for entity: TableViewCellEntity, in container: UITableView) -> CGFloat {
         return 0
     }
 }

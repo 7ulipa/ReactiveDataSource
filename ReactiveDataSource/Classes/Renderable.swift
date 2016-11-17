@@ -13,5 +13,5 @@ public protocol Renderable {
     associatedtype Dimension
     associatedtype Container
     func render(with entity: Entity)
-    func preferredDimension(for entity: Entity, in container: Container) -> Dimension
+    static func preferredDimension(for entity: Entity, in container: Container) -> Dimension
 }
