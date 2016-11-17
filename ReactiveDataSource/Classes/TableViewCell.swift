@@ -11,7 +11,6 @@ import Foundation
 open class TableViewCell: UITableViewCell, Renderable, Reusable {
     
     public typealias Container = UITableView
-    public typealias Dimension = CGFloat
     public typealias Entity = TableViewCellEntity
     
     public func render(with entity: TableViewCellEntity) {
@@ -22,7 +21,7 @@ open class TableViewCell: UITableViewCell, Renderable, Reusable {
         container.register(self, forCellReuseIdentifier: reuseIdentifier())
     }
     
-    static public func preferredDimension(for entity: TableViewCellEntity, in container: UITableView) -> CGFloat {
+    open class func preferredDimension(for entity: TableViewCellEntity, in container: UITableView) -> CGFloat {
         return 0
     }
 }

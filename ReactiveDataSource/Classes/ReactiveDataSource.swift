@@ -19,6 +19,10 @@ open class ReactiveDataSource: NSObject {
         super.init()
     }
     
+    public func item(at indexPath: IndexPath) -> Item {
+        return sections[indexPath.section].items[indexPath.item]
+    }
+    
     public private(set) var sections: [Section]
     
     public func perform(changes: @escaping (ChangeMaker) -> Void) {

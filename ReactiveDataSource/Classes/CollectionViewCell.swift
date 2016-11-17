@@ -9,10 +9,10 @@
 import Foundation
 
 open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
-    public typealias Container = UICollectionView
-    public typealias Dimension = CGSize
     
+    public typealias Container = UICollectionView
     public typealias Entity = CollectionViewCellEntity
+    
     open func render(with entity: CollectionViewCellEntity) {
         //for override
     }
@@ -21,7 +21,7 @@ open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
         container.register(self, forCellWithReuseIdentifier: reuseIdentifier())
     }
     
-    static public func preferredDimension(for entity: CollectionViewCellEntity, in container: UICollectionView) -> CGSize {
+    open class func preferredDimension(for entity: CollectionViewCellEntity, in container: UICollectionView) -> CGSize {
         return CGSize.zero
     }
 }

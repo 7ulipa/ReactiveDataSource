@@ -8,10 +8,7 @@
 
 import Foundation
 
-public protocol Renderable {
+public protocol Renderable: NSObjectProtocol {
     associatedtype Entity
-    associatedtype Dimension
-    associatedtype Container
     func render(with entity: Entity)
-    static func preferredDimension(for entity: Entity, in container: Container) -> Dimension
 }
