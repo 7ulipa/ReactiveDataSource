@@ -12,6 +12,7 @@ open class CollectionViewCell: UICollectionViewCell, Renderable, Reusable {
     
     public typealias Container = UICollectionView
     public typealias Entity = CollectionViewCellEntity
+    public typealias Dimension = CGSize
     
     open func render(with entity: CollectionViewCellEntity) {
         //for override

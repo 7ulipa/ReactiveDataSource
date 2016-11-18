@@ -12,4 +12,8 @@ open class CollectionViewCellEntity: Item {
     open func cellClass() -> CollectionViewCell.Type {
         return CollectionViewCell.self
     }
+    
+    public override init() {
+        super.init()
+    }
 }
