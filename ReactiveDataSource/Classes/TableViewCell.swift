@@ -14,7 +14,7 @@ open class TableViewCell: UITableViewCell, Renderable, Reusable {
     public typealias Entity = TableViewCellEntity
     public typealias Dimension = CGFloat
     
-    public func render(with entity: TableViewCellEntity) {
+    open func render(with entity: TableViewCellEntity) {
         
     }
     
