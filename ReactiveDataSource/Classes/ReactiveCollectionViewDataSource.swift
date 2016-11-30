@@ -13,6 +13,10 @@ open class ReactiveCollectionViewDataSource: ReactiveDataSource, UICollectionVie
         return sections.count
     }
     
+    public override init(_ sections: [Section] = []) {
+        super.init(sections)
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections[section]._items.count
     }
