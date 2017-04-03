@@ -9,7 +9,7 @@
 import Foundation
 
 open class Item {
-    weak var section: Section?
+    public weak var section: Section?
     
     public func remove() {
         section?.remove(self)
