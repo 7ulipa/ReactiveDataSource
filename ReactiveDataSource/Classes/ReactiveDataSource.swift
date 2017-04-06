@@ -27,6 +27,10 @@ open class ReactiveDataSource: NSObject {
         return sections[index]
     }
     
+    public func index(of section: Section) -> Int? {
+        return sections.index(of: section)
+    }
+    
     var sections: [Section]
     
     public func perform(changes: @escaping (ChangeMaker) -> Void) {
