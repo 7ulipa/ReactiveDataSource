@@ -12,6 +12,13 @@ open class Section {
     
     public private(set) var items: [Item] = []
     
+    public func item<T: Item>(at index: Int) -> T? {
+        if index < _items.count {
+            return _items[index] as? T
+        }
+        return nil
+    }
+    
     var _items: [Item] = []
     
     weak var maker: ReactiveDataSource.ChangeMaker?

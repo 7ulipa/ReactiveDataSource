@@ -19,19 +19,25 @@ open class ReactiveDataSource: NSObject {
         super.init()
     }
     
-    public func item(at indexPath: IndexPath) -> Item {
-        return sections[indexPath.section]._items[indexPath.item]
+    public func item<T: Item>(at indexPath: IndexPath) -> T? {
+        if let section: Section = section(at: indexPath.section) {
+            return section.item(at: indexPath.item)
+        }
+        return nil
     }
     
-    public func section(at index: Int) -> Section {
-        return sections[index]
+    public func section<T: Section>(at index: Int) -> T? {
+        if index < sections.count {
+            return sections[index] as? T
+        }
+        return nil
     }
     
     public func index(of section: Section) -> Int? {
         return sections.index(of: section)
     }
     
-    var sections: [Section]
+    public var sections: [Section]
     
     public func perform(changes: @escaping (ChangeMaker) -> Void) {
         queue.addOperation {
