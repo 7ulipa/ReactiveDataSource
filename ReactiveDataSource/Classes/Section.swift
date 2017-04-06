@@ -12,7 +12,7 @@ open class Section {
     
     public internal(set) var items: [Item] = []
     
-    weak var sectionChangeMaker: ReactiveDataSource.SectionChangeMaker?
+    public weak var sectionChangeMaker: ReactiveDataSource.SectionChangeMaker?
     
     public init(_ items: [Item] = []) {
         self.items = items
