@@ -19,6 +19,10 @@ open class Section {
         return nil
     }
     
+    public var numberOfItems: Int {
+        return _items.count
+    }
+    
     var _items: [Item] = []
     
     weak var maker: ReactiveDataSource.ChangeMaker?

@@ -37,6 +37,10 @@ open class ReactiveDataSource: NSObject {
         return sections.index(of: section)
     }
     
+    public var numberOfSections: Int {
+        return sections.count
+    }
+    
     public var sections: [Section]
     
     public func perform(changes: @escaping (ChangeMaker) -> Void) {
