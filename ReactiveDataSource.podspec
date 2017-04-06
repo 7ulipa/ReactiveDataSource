@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ReactiveDataSource'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Make data source change easy'
 
   s.description      = <<-DESC

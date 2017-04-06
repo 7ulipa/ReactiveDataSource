@@ -23,12 +23,13 @@ open class Section {
         return _items.count
     }
     
-    var _items: [Item] = []
+    public var _items: [Item] = []
     
     weak var maker: ReactiveDataSource.ChangeMaker?
     
     public init(_ items: [Item] = []) {
         self.items = items
+        _items = items
         items.forEach { (item) in
             item.section = self
         }
