@@ -20,10 +20,14 @@ open class ReactiveDataSource: NSObject {
     }
     
     public func item(at indexPath: IndexPath) -> Item {
-        return sections[indexPath.section].items[indexPath.item]
+        return sections[indexPath.section]._items[indexPath.item]
     }
     
-    public private(set) var sections: [Section]
+    public func section(at index: Int) -> Section {
+        return sections[index]
+    }
+    
+    var sections: [Section]
     
     public func perform(changes: @escaping (ChangeMaker) -> Void) {
         queue.addOperation {
