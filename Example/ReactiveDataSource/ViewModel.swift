@@ -12,7 +12,7 @@ import ReactiveDataSource
 class ViewModel: ReactiveCollectionViewDataSource {
     func refresh() {
         self.perform(changes: { (maker) in
-            self.sections.forEach({ (section) in
+            maker.sections.forEach({ (section) in
                 section.append(MyCellEntity(self.value))
                 self.value += 1
             })

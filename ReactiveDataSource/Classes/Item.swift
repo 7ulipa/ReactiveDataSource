@@ -12,16 +12,16 @@ open class Item {
     public weak var section: Section?
     
     public func remove() {
-        section?.remove(self)
+        section?.sectionChangeMaker?.remove(self)
     }
     
     public init() {
         
     }
     
-    public var indexPathForRemove: IndexPath? {
+    var indexPathForRemove: IndexPath? {
         get {
-            if let section = section?.sectionForRemove {
+            if let section = section?.sectionChangeMaker?.sectionForRemove {
                 if let itemIndex = itemForRemove {
                     return IndexPath(item: itemIndex, section: section)
                 }
@@ -30,9 +30,9 @@ open class Item {
         }
     }
     
-    public var indexPathForAdd: IndexPath? {
+    var indexPathForAdd: IndexPath? {
         get {
-            if let section = section?.sectionForAdd {
+            if let section = section?.sectionChangeMaker?.sectionForAdd {
                 if let itemIndex = itemForAdd {
                     return IndexPath(item: itemIndex, section: section)
                 }
@@ -41,15 +41,15 @@ open class Item {
         }
     }
     
-    public var itemForAdd: Int? {
+    var itemForAdd: Int? {
         get {
-            return section?.items.index(of: self)
+            return section?.sectionChangeMaker?.items.index(of: self)
         }
     }
     
-    public var itemForRemove: Int? {
+    var itemForRemove: Int? {
         get {
-            return section?._items.index(of: self)
+            return section?.items.index(of: self)
         }
     }
 }
