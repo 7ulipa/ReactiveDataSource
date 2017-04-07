@@ -18,6 +18,8 @@ extension ReactiveDataSource {
     
         var changes: [Change<DataValue<Section, Item>>] = []
         
+        public var didCommit: [(() -> Void)] = []
+        
         init(_ sections: [Section]) {
             self.sections = sections.map(SectionChangeMaker.init)
             _sections = self.sections

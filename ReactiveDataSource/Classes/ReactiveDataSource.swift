@@ -33,6 +33,7 @@ open class ReactiveDataSource: NSObject {
             operation._commit = {
                 maker.commit()
                 self.sections = maker.sections.map { $0.section }
+                maker.didCommit.forEach { $0() }
             }
             
             operation._complete = {
