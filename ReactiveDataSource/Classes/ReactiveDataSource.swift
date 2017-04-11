@@ -21,7 +21,7 @@ open class ReactiveDataSource: NSObject {
     
     public var sections: [Section]
     
-    public func perform(changes: @escaping (ChangeMaker) -> Void) {
+    public func perform(changes: @escaping (ChangeMaker) -> Void, complete: (() -> Void)? = nil) {
         queue.addOperation {
             let maker = ChangeMaker(self.sections)
             changes(maker)
@@ -45,6 +45,8 @@ open class ReactiveDataSource: NSObject {
             }
             
             sem.wait()
+            complete?()
+            maker.didComplete.forEach { $0() }
         }
     }
 }
