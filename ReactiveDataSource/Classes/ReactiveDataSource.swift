@@ -41,7 +41,12 @@ open class ReactiveDataSource: NSObject {
             }
             
             DispatchQueue.main.async {
-                self.delegate?.perform(operation)
+                if let delegate = self.delegate {
+                    delegate.perform(operation)
+                } else {
+                    operation.commit()
+                    operation.complete()
+                }
             }
             
             sem.wait()

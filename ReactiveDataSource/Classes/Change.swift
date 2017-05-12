@@ -31,20 +31,13 @@ public class ChangeOperation {
     var _commit: (() -> Void)?
     
     public func complete() {
-        objc_sync_enter(self)
         _complete?()
         _complete = nil
-        objc_sync_exit(self)
-    }
-    
-    deinit {
-        objc_sync_enter(self)
-        _complete?()
-        objc_sync_exit(self)
     }
     
     public func commit() {
         _commit?()
+        _commit = nil
     }
 }
 
